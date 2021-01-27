@@ -1,0 +1,18 @@
+* include text input (for data entering)
+    must validate:
+    - max 8 digits
+    - must be 0 or 1 (user needs to be notified when anything else
+    is entered)
+
+status: (not started)
+
+* include text input (for data display)
+    must validate:
+    - the user can't type in it
+
+status: (not started)
+
+* (bonus feature) include an option so that the text input (for data entering)
+lets the user type a variable amount of characters
+
+status: (not started)
