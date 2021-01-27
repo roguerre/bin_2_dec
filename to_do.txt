@@ -1,3 +1,10 @@
+* include information for the user to know what to do
+    - if the user is in normal mode, explain the maximum amount
+    of characters, hide the explanation for the other case
+
+status:
+    - doing
+
 * include text input (for data entering)
     must validate:
     - max 8 digits
@@ -15,4 +22,6 @@ status: (not started)
 * (bonus feature) include an option so that the text input (for data entering)
 lets the user type a variable amount of characters
 
-status: (not started)
+status:
+    - an event listener is watching for a checkbox's click event
+    - a different explanation is shown based on the checkbox's status
