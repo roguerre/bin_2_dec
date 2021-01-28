@@ -1,6 +1,7 @@
 const explanation = document.getElementById("explanation");
 const userInput = document.getElementById("user-input");
 const userNotification = document.getElementById("user-notification");
+const calculateButton = document.getElementById("calculate-button");
 const userOutput = document.getElementById("user-output");
 const isVariable = document.getElementById("is-variable");
 
@@ -25,6 +26,19 @@ userInput.addEventListener("input", (evt) => {
   } else {
     userNotification.innerText = "";
   }
+});
+
+const toDecimal = (binary) => {
+  const binLength = binary.length;
+  let result = 0;
+  for (let idx = binLength - 1; idx >= 0; idx--) {
+    result += +binary[idx] * 2 ** (binLength - 1 - idx);
+  }
+  return result.toString();
+};
+
+calculateButton.addEventListener("click", () => {
+  userOutput.value = toDecimal(userInput.value);
 });
 
 isVariable.addEventListener("click", (evt) => {

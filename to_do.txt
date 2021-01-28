@@ -29,7 +29,10 @@ lets the user type a variable amount of characters
 status:
     - an event listener is watching for a checkbox's click event
     - a different explanation is shown based on the checkbox's status
+    - done
 
 * make the conversion and show the result
 
-status: (pending)
+status:
+    - an event listener has been added on the button
+    - a function was created to convert binary into decimal representations
