@@ -3,7 +3,7 @@
     of characters, hide the explanation for the other case
 
 status:
-    - doing
+    - done
 
 * include text input (for data entering)
     must validate:
@@ -17,8 +17,9 @@ status: (not started)
     must validate:
     - the user can't type in it
 
-status: (not started)
-
+status:
+    - done
+    
 * (bonus feature) include an option so that the text input (for data entering)
 lets the user type a variable amount of characters
 
