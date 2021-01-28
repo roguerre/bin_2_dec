@@ -11,7 +11,10 @@ status:
     - must be 0 or 1 (user needs to be notified when anything else
     is entered)
 
-status: (not started)
+status:
+    - set/unset maxlength attribute according to the checkbox status
+    - notify the user when there is invalid input
+    - done
 
 * include text input (for data display)
     must validate:
@@ -26,3 +29,7 @@ lets the user type a variable amount of characters
 status:
     - an event listener is watching for a checkbox's click event
     - a different explanation is shown based on the checkbox's status
+
+* make the conversion and show the result
+
+status: (pending)
