@@ -18,9 +18,7 @@ explanation.innerText = explanationNormal;
 userInput.setAttribute("maxLength", 8);
 
 userInput.addEventListener("input", (evt) => {
-  const pattern = /^[01]+$/;
-  const currValue = evt.target.value;
-  if (currValue.length > 0 && !pattern.test(currValue)) {
+  if (evt.target.validity.patternMismatch) {
     userNotification.innerText =
       "Just 1 or 0 are allowed (check for blank spaces also).";
   } else {
