@@ -36,3 +36,4 @@ status:
 status:
     - an event listener has been added on the button
     - a function was created to convert binary into decimal representations
+    - done

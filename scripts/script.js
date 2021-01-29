@@ -21,8 +21,11 @@ userInput.addEventListener("input", (evt) => {
   if (evt.target.validity.patternMismatch) {
     userNotification.innerText =
       "Just 1 or 0 are allowed (check for blank spaces also).";
+    calculateButton.disabled = true;
   } else {
+    console.log("disabling");
     userNotification.innerText = "";
+    calculateButton.disabled = false;
   }
 });
 
@@ -34,6 +37,8 @@ const toDecimal = (binary) => {
   }
   return result.toString();
 };
+
+calculateButton.disabled = true;
 
 calculateButton.addEventListener("click", () => {
   userOutput.value = toDecimal(userInput.value);
