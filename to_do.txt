@@ -46,6 +46,9 @@ status:
 * add a short description in the README file
 
 status:
- 
     - done
-    
+
+* include github page's link for the project in the README file
+
+status: 
+    - done
