@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binary to Decimal</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="text-center">Binary to Decimal Calculator</h1>
-    <section class="explanation">
-      <p id="explanation"></p>
-    </section>
+    <div class="main-wrapper">
+      <h1 class="text-center main-heading">Binary to Decimal Calculator</h1>
+      <section class="explanation">
+        <p id="explanation"></p>
+      </section>
 
-    <section class="calculator">
-      <label for="user-input">Enter the number</label>
-      <input type="text" id="user-input" pattern="[01]+" />
-      <p id="user-notification"></p>
-      <button id="calculate-button">Calculate</button>
-      <label for="user-output">Result</label>
-      <input type="text" id="user-output" disabled />
-    </section>
+      <section class="calculator">
+        <label for="user-input">Enter the number</label>
+        <div class="input-with-error">
+          <input type="text" id="user-input" pattern="[01]+" />
+          <p id="user-notification"></p>
+        </div>
+        <button id="calculate-button">Calculate</button>
+        <label for="user-output">Result</label>
+        <input type="text" id="user-output" disabled />
+      </section>
 
-    <section class="digits-amount">
-      <input type="checkbox" id="is-variable" />
-      <label for="is-variable">Activate variable length binary numbers</label>
-    </section>
+      <section class="digits-amount">
+        <input type="checkbox" id="is-variable" />
+        <label for="is-variable">Activate variable length binary numbers</label>
+      </section>
+    </div>
 
     <script src="./scripts/script.js"></script>
   </body>

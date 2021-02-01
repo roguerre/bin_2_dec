@@ -14,17 +14,17 @@ const explanationVariable = `
   Enter digits (0 or 1) corresponding to a binary number
 `;
 
-explanation.innerText = explanationNormal;
+explanation.textContent = explanationNormal.trim();
 userInput.setAttribute("maxLength", 8);
 
 userInput.addEventListener("input", (evt) => {
   if (evt.target.validity.patternMismatch) {
-    userNotification.innerText =
+    userNotification.textContent =
       "Just 1 or 0 are allowed (check for blank spaces also).";
     calculateButton.disabled = true;
   } else {
     console.log("disabling");
-    userNotification.innerText = "";
+    userNotification.textContent = "";
     calculateButton.disabled = false;
   }
 });
@@ -48,10 +48,10 @@ isVariable.addEventListener("click", (evt) => {
   userInput.value = "";
   userOutput.value = "";
   if (evt.target.checked) {
-    explanation.innerText = explanationVariable;
+    explanation.textContent = explanationVariable.trim();
     userInput.removeAttribute("maxLength");
   } else {
-    explanation.innerText = explanationNormal;
+    explanation.textContent = explanationNormal.trim();
     userInput.setAttribute("maxLength", 8);
   }
 });

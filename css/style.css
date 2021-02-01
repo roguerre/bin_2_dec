@@ -2,8 +2,79 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+button,
+input {
+  font-family: "Cairo", sans-serif;
+  font-weight: 300;
+}
+
+.input-with-error {
+  min-height: 70px;
+}
+
+.calculator,
+.input-with-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label + input,
+button,
+.calculator label {
+  display: block;
+}
+
+.calculator label {
+  margin: 0 0 5px 0;
+}
+
+.calculator input {
+  margin: 0 0 10px 0;
+  padding: 5px;
+}
+
+.calculator input,
+.calculator button {
+  width: 200px;
+}
+
+.input-with-error input {
+  margin: 0 0 3px 0;
+}
+
+.calculator p {
+  font-size: 12px;
+  color: #fb0f0f;
+}
+
+.calculator button {
+  margin: 0 0 10px 0;
+  height: 30px;
+  font-size: 14px;
+}
+
+#user-output {
+  background-color: #dfd7b9;
+  color: black;
 }
 
 .text-center {
   text-align: center;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-heading {
+  font-weight: 600;
+  font-size: 30px;
 }
