@@ -42,4 +42,10 @@ status:
 
 status:
     - done
+
+* add a short description in the README file
+
+status:
+ 
+    - done
     
